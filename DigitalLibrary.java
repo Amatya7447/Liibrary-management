@@ -83,12 +83,12 @@ public class DigitalLibrary {
             
             if (!sc.hasNextInt()) {
                 System.out.println("Invalid input! Enter a number.");
-                sc.next(); // Consume invalid input
+                sc.next();
                 continue;
             }
             
             int choice = sc.nextInt();
-            sc.nextLine(); // Consume newline
+            sc.nextLine(); 
 
             switch (choice) {
                 case 1:
@@ -100,7 +100,7 @@ public class DigitalLibrary {
                     String author = sc.nextLine();
                     System.out.print("Available (true/false): ");
                     boolean available = sc.nextBoolean();
-                    sc.nextLine(); // Consume newline
+                    sc.nextLine();
                     library.addBook(id, title, author, available);
                     break;
                 case 2:
